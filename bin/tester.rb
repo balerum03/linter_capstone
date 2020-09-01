@@ -1,11 +1,7 @@
-def my_method (hola, name) do
-  puts "hello this is just a test"
+class my_test_class
+array_testing = 1,2,3,4,5,6]
+array_testing.each{|x| puts x
+def hello_method (*string_test)
+  puts "Hello"
 end
-
-def second_method [has, the] do
-  puts "this is another method for testing"
-end
-
-class Test_class {hello} do
-  my_name = 'adan'
 end

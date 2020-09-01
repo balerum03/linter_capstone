@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+
+require 'colorize'
+require_relative '../lib/checker.rb'
+
+# rubocop:disable Metrics/AbcSize
+
+arg_to_check = [[/\(/, /\)/], [/\[/, /\]/], [/\{/, /\}/]]
+
+checker = Checker.new(ARGV.first)
+
+def p_results(total)
+  puts 'Everything looks good'.colorize(:green) if total[1].empty? && total[0].empty?
+  total[1]&.each do |error_index|
+    puts "Check this line #{error_index + 1}, you could be missing something".colorize(:red)
+  end
+  total[0]&.each do |error_index|
+    puts "Check this line #{error_index + 1}, you could be missing something".colorize(:red)
+  end
+end
+
+result = checker.file_analizer(arg_to_check[0][0], arg_to_check[0][1])
+puts 'checking for parenthesis'.colorize(:blue)
+p_results(result)
+
+result = checker.file_analizer(arg_to_check[1][0], arg_to_check[1][1])
+puts 'Checking for Square brakets'.colorize(:blue)
+p_results(result)
+
+result = checker.file_analizer(arg_to_check[2][0], arg_to_check[2][1])
+puts 'Checking for curly brakets'.colorize(:blue)
+p_results(result)
+
+# rubocop:enable Metrics/AbcSize
