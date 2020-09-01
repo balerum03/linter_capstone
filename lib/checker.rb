@@ -1,4 +1,3 @@
-# rubocop:disable Metrics/MethodLength
 
 class Checker
   attr_writer :open_index, :close_index, :receiver
@@ -41,5 +40,3 @@ class Checker
     [open_counter, close_counter]
   end
 end
-
-# rubocop:enable Metrics/MethodLength
