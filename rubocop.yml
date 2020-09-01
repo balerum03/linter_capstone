@@ -2,8 +2,8 @@ AllCops:
   Exclude:
     - "Guardfile"
     - "Rakefile"
-    - "spec/spec_helper.rb"
-    - "bin/tester.rb"
+    - ./spec/spec_helper.rb
+    - ./bin/tester.rb
   DisplayCopNames: true
 
 Layout/LineLength:

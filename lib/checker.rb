@@ -1,10 +1,9 @@
-
 class Checker
   attr_writer :open_index, :close_index, :receiver
   attr_reader :open_index, :close_index, :receiver, :my_file
 
   def initialize(filepath)
-    @my_file =  filepath
+    @my_file = filepath
     @open_index = []
     @close_index = []
   end
@@ -29,8 +28,6 @@ class Checker
 
     if open_array.length > close_array.length
       close_counter -= close_array
-    elsif open_array.length < close_array.length
-      open_counter = close_counter - open_array
     end
 
     close_counter.uniq!
