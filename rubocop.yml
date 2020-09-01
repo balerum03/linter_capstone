@@ -3,7 +3,7 @@ AllCops:
     - "Guardfile"
     - "Rakefile"
     - ./spec/spec_helper.rb
-    - ./bin/tester.rb
+    - tester.rb
   DisplayCopNames: true
 
 Layout/LineLength:
