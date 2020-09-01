@@ -3,8 +3,6 @@
 require 'colorize'
 require_relative '../lib/checker.rb'
 
-# rubocop:disable Metrics/AbcSize
-
 arg_to_check = [[/\(/, /\)/], [/\[/, /\]/], [/\{/, /\}/]]
 
 checker = Checker.new(ARGV.first)
@@ -30,5 +28,3 @@ p_results(result)
 result = checker.file_analizer(arg_to_check[2][0], arg_to_check[2][1])
 puts 'Checking for curly brakets'.colorize(:blue)
 p_results(result)
-
-# rubocop:enable Metrics/AbcSize
