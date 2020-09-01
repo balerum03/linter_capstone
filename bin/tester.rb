@@ -1,3 +1,4 @@
+# rubocop: disable Lint/Sytax
 class Test
   array_testing = [1, 2, 3, 4, 5, 6
   array_testing.each  |x| puts x }
@@ -5,3 +6,4 @@ class Test
     puts 'Hello'
   end
 end
+# rubocop: enable Lint/Sytax
