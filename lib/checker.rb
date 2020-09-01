@@ -25,11 +25,7 @@ class Checker
     open_array = @receiver[0]
     close_array = @receiver[1]
     close_counter = open_array + close_array
-
-    if open_array.length > close_array.length
-      close_counter -= close_array
-    end
-
+    close_counter -= close_array if open_array.length > close_array.length
     close_counter.uniq!
     open_counter = close_counter
     close_counter -= close_array
