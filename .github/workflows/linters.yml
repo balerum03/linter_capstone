@@ -16,4 +16,4 @@ jobs:
           gem install --no-document rubocop:'~>0.81.0' # https://docs.rubocop.org/en/stable/installation/
           [ -f .rubocop.yml ] || wget https://raw.githubusercontent.com/balerum03/linter_capstone/my_own_linter/rubocop.yml
       - name: Rubocop Report
-        run: rubocop --color
+        run: rubocop --except [tester.rb]
