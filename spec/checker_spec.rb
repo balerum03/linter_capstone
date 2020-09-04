@@ -10,7 +10,7 @@ describe Checker do
       end
       # negative scenario
       it 'returns error when it the methos is given no arguments, must have two arguments' do
-        expect { file_rspec.file_checker() }.to raise_error(ArgumentError)
+        expect { file_rspec.file_checker }.to raise_error(ArgumentError)
       end
     end
   end

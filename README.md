@@ -22,12 +22,12 @@ This project consists in the development of a basic linter, in this case I choos
 
 ### Setup
 
-- Download or clone the repository
-- Run a CLI and run `ruby main` on your local machine
-- Additionally, You can go to https://repl.it and select language ruby, copy paste the code, and run it.
+- Download or clone the repository.
+- Make sure that you have the gems require install in this case just colorize and rubocop.
+- Run a CLI and run `ruby main test_file.rb` on your local machine.
 
 ### How to use the linter
- You can run the basic linter just as shown in the image below, where the tester.rb can be you ruby file.
+ You can run the basic linter just as shown in the image below, where the tester_file.rb can be you ruby file (remeber to use relative path).
 ![screenshot](media/how_to.png)
 
 ## Author
