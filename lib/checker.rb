@@ -1,5 +1,4 @@
 class Checker
-
   def initialize(filepath)
     @my_file = filepath
     @error_index = []
