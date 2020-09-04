@@ -32,7 +32,7 @@ This project consists in the development of a basic linter, in this case I choos
 ### Run Test
 Open your terminal and follow this simple steps:
 - Once you have cloned the Repository, you would need to move to the folder where the project is located by running  ``` cd linter_capstone ```
-(remember that you have take in consideration the location of this project on you own machine)
+(remember that you have take in consideration the location of this project on your own machine)
 - When you get to project directory then run  ``` gem install colorize ```
 - Then you move the bin directory by running ``` cd bin ```
 - The only thing left to do is run the program by typing ``` ruby main file_to_be_tested.rb ``` (make sure the file you are testing is a ruby file with the .rb extension)
