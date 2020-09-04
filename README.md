@@ -35,7 +35,7 @@ This project consists in the development of a basic linter, in this case I choos
 👤 **Adan Fernandez Bonilla**
 
 - Github: [@balerum03](https://github.com/balerum03)
-- Twitter: @balerum03
+- Twitter: [@balerum03](https://twitter.com/balerum03)
 - Linkedin: [linkedin](https://www.linkedin.com/in/adan-fernandez-bonilla-4560831a5)
 
 ## 🤝 Contributing
