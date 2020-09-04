@@ -1,6 +1,4 @@
 class Checker
-  attr_writer :open_index, :close_index, :receiver
-  attr_reader :open_index, :close_index, :receiver, :my_file
 
   def initialize(filepath)
     @my_file = filepath

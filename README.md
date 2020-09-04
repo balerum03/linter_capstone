@@ -12,7 +12,10 @@ This project consists in the development of a basic linter, in this case I choos
 ## Built With
 
 - Ruby
+
+### technology/gem used
 - Rubocop
+- colorize
 - Rspec
 
 ### Prerequisites
