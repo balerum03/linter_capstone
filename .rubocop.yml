@@ -2,15 +2,14 @@ AllCops:
   Exclude:
     - "Guardfile"
     - "Rakefile"
-    - 'spec/spec_helper.rb'
+    - "spec/spec_helper.rb"
     - "testers/tester.rb"
-
   DisplayCopNames: true
 
 Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
-  Max: 100
+  Max: 20
 Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
