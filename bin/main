@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'colorize'
+require_relative '../lib/checker.rb'
+
+arg_to_check = [[/\(/, /\)/], [/\[/, /\]/], [/\{/, /\}/]]
+
+checker = Checker.new(ARGV.first)
+
+def print_result(result_array, checking)
+  result_array.each do |x|
+    puts "There is something wrong with #{checking} in line #{x + 1}".colorize(:red)
+  end
+end
+
+flag = []
+error_index = checker.file_checker(arg_to_check[0][0], arg_to_check[0][1])
+!error_index.empty? ? print_result(error_index, 'parenthesis') : (flag << 1)
+error_index = checker.file_checker(arg_to_check[1][0], arg_to_check[1][1])
+!error_index.empty? ? print_result(error_index, 'Square brakets') : (flag << 1)
+error_index = checker.file_checker(arg_to_check[2][0], arg_to_check[2][1])
+!error_index.empty? ? print_result(error_index, 'curly brakets') : (flag << 1)
+
+puts 'There were no errors found in your code.'.colorize(:green) if flag.length == 3
